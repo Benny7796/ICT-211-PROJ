@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Bebas Neue, Arial Narrow, sans-serif;
+    font-weight: 600;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #3b5265;
+    color: #ffffff;
+}
+
+.header{
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 7px;
+    position: relative;
+}
+.header h3{
+    color: #000;
+}
+.links{
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.links a {
+    color: #27e9b5;
+    text-decoration: none;
+}
+
+.about-hero {
+    background-color: #011c40;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about-hero h1 {
+    font-size: 2.5rem;
+    color: #27e9b5;
+    margin-bottom: 15px;
+}
+
+.about-hero p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 1rem;
+    color: #b0e5ff;
+}
+
+.brand-story {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.brand-story h2 {
+    color: #27e9b5;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.brand-story p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 1rem;
+    color: #b0e5ff;
+}
+
+.values {
+    padding: 50px 20px;
+    background-color: #011c40;
+    text-align: center;
+}
+
+.values h2 {
+    color: #27e9b5;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.value-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    padding: 0 10px;
+}
+
+.value {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 25px;
+    border-radius: 15px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.value h3 {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.value p {
+    font-size: 0.95rem;
+    color: #b0e5ff;
+}
+
+.cta {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 2rem;
+    color: #27e9b5;
+    margin-bottom: 10px;
+}
+
+.cta p {
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+    color: #b0e5ff;
+}
+
+.cta a {
+    padding: 12px 25px;
+    background-color: #27e9b5;
+    color: #011c40;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.cta a:hover {
+    background-color: #1bb390;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #3b5265;
+    border-top: 1px solid #fff;
+    margin-top: auto;
+}
+
+footer .socials {
+    margin-top: 10px;
+}
+
+footer .socials a {
+    color: #27e9b5;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .links {
+        align-items: center;
+        width: 100%;
+        gap: 10px;
+    }
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px 0;
+        gap: 10;
+    }
+
+    .about-hero h1,
+    .brand-story h2,
+    .values h2,
+    .cta h2 {
+        font-size: 1.5rem;
+    }
+
+    .value-cards {
+        grid-template-columns: 1fr;
+    }
+}
