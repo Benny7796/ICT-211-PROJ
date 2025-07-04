@@ -33,12 +33,13 @@
 
         <div class="contact-form">
             <h2>Send a Message</h2>
-            <form action="#" method="POST">
-                <input type="text" placeholder="Your Name">
-                <input type="email" placeholder="Your Email">
-                <textarea placeholder="Your Message" rows="5"></textarea>
-                <button type="submit">Submit</button>
-            </form>
+           <form id="contactForm">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Submit</button>
+</form>
+
         </div>
 
         <div class="help-section">
@@ -59,5 +60,12 @@
     </footer>
 
     </div>
+
+<script>
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+        e.preventDefault(); 
+        alert("✅ Thank you! Your message has been sent.");
+    });
+</script>
 </body>
 </html>
