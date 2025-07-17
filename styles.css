@@ -8,6 +8,7 @@
 body {
     background-color: #1a2b3c;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
